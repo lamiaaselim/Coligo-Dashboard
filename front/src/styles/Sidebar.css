@@ -1,0 +1,30 @@
+.ps-sidebar-container {
+  background: -webkit-linear-gradient(
+    rgb(4, 114, 97),
+    rgb(23, 143, 156)
+  ) !important;
+  color: white !important;
+}
+
+.pro-sidebar .menu-item {
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+.pro-sidebar .menu-item .ps-active {
+  background: white !important;
+  color: rgb(3, 103, 103) !important;
+}
+
+.ps-menuitem-root:hover {
+  background: white !important;
+  color: rgb(3, 103, 103) !important;
+}
+.ps-menu-button:hover {
+  background: white !important;
+  color: rgb(14, 130, 130) !important;
+}
+
+.ps-menu-icon {
+  font-size: 28px;
+}

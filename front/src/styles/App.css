@@ -1,0 +1,39 @@
+body {
+  background-color: #eaebeb;
+}
+.btn-green {
+  background-color: #14c578 !important;
+  color: white !important;
+}
+
+.btn-green:hover {
+  background-color: #14c578 !important;
+  color: white !important;
+}
+
+.btn-outline-green:hover {
+  background-color: #14c578 !important;
+  color: white !important;
+}
+
+.btn-outline-green {
+  background-color: transparent !important;
+  border: 2px solid #14c578 !important;
+  color: #14c578 !important;
+}
+
+.text-green {
+  color: #14c578 !important;
+}
+
+.text-green-gradient {
+  background: -webkit-linear-gradient(rgb(19, 207, 119), rgb(2, 21, 95));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+
+
