@@ -40,7 +40,7 @@ const createAnnouncement = async (req, res) => {
     const announcementData = {
       title,
       description,
-      picture: req.file ? `uploads/${req.file.filename}` : undefined, // Save image path if provided
+      picture: req.file ? `uploads/${req.file.filename}` : undefined, 
       createdBy: userId, // Associate the announcement with the user
     };
 
@@ -67,7 +67,7 @@ const updateAnnouncement = async (req, res) => {
     const announcementData = {
       title,
       description,
-      picture: req.file ? `uploads/${req.file.filename}` : req.body.picture, // Update image path if a new file is uploaded
+      picture: req.file ? `uploads/${req.file.filename}` : req.body.picture,
     };
 
     const updatedAnnouncement = await announcementsService.updateAnnouncement(req.params.id, announcementData);
@@ -94,7 +94,8 @@ const deleteAnnouncement = async (req, res) => {
     if (!announcement) {
       return res.status(404).json({ error: 'Announcement not found' });
     }
-    req.io.emit("announcementDeleted", req.params.id); // Emit event for real-time update
+    // Emit event for real-time update
+    req.io.emit("announcementDeleted", req.params.id); 
     res.status(200).json({ message: 'Announcement deleted successfully' });
   } catch (error) {
     res.status(500).json({ error: 'Failed to delete announcement' });

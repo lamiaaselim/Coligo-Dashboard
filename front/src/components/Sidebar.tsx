@@ -70,7 +70,7 @@ const MySidebar: React.FC = () => {
         <Menu>
           <MenuItem
             className="py-5"
-            icon={collapsed ? <h2>C</h2> : <h2 className="ps-5 ms-5" >Coligo</h2>} // Replace FaBars with "Coligo" or "C"
+            icon={collapsed ? <h2>C</h2> : <h2 className="ps-5 ms-5" >Coligo</h2>} // For replacing FaBars with "Coligo" or "C"
             onClick={handleToggleSidebar}
             style={{ textAlign: "center" }}
           >

@@ -74,9 +74,11 @@ coligo-dashboard/
 ├── src/
 │   ├── components/          # Reusable UI components
 │   ├── pages/               # Page-level components
-│   ├── store/               # Redux store setup
+│   ├── redux/               # Redux store setup
+│   ├── hooks/               # costumes hooks
+│   ├── types/               # costumize interface for typescript types
 │   ├── styles/              # Global styles and themes
-│   ├── utils/               # Helper functions
+│   ├── services/            # All services forAPI
 │   ├── App.tsx              # Main app component
 │   ├── index.tsx            # Entry point
 ├── .env                     # Environment variables

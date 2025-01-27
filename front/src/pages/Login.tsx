@@ -8,7 +8,7 @@ const Login: React.FC = () => {
   const navigate = useNavigate();
 
   const handleLoginSuccess = () => {
-    navigate('/dashboard'); // Redirect to home page after login
+    navigate('/dashboard'); // Redirect to dashboard page after login
   };
 
   return (

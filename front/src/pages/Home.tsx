@@ -10,7 +10,7 @@ const Home: React.FC = () => {
 
   useEffect(() => {
     if (user) {
-      navigate('/dashboard'); // إعادة التوجيه إلى Dashboard إذا كان المستخدم مسجل الدخول
+      navigate('/dashboard'); // redirect to Dashboard if user is logged in 
     }
   }, [user, navigate]);
 

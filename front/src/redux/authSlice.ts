@@ -20,7 +20,7 @@ export const loginUser = createAsyncThunk(
   async (data: LoginFormData, { rejectWithValue }) => {
     try {
       const user = await login(data);
-      localStorage.setItem('user', JSON.stringify(user)); // حفظ المستخدم في localStorage
+      localStorage.setItem('user', JSON.stringify(user)); //  save user in localStorage
       return user;
     } catch (err) {
       return rejectWithValue(err.message);
@@ -33,7 +33,7 @@ export const signupUser = createAsyncThunk(
   async (data: SignupFormData, { rejectWithValue }) => {
     try {
       const user = await signup(data);
-      localStorage.setItem('user', JSON.stringify(user)); // حفظ المستخدم في localStorage
+      localStorage.setItem('user', JSON.stringify(user)); // save user in localStorage
       return user;
     } catch (err) {
       return rejectWithValue(err.message);
@@ -47,7 +47,7 @@ const authSlice = createSlice({
   reducers: {
     logout(state) {
       state.user = null;
-      localStorage.removeItem('user'); // حذف المستخدم من localStorage عند تسجيل الخروج
+      localStorage.removeItem('user'); // remove user from localStorage
     },
     clearError(state) {
       state.error = null;
@@ -55,7 +55,7 @@ const authSlice = createSlice({
     loadUserFromStorage(state) {
       const userData = localStorage.getItem('user');
       if (userData) {
-        state.user = JSON.parse(userData); // تحميل المستخدم من localStorage
+        state.user = JSON.parse(userData); // load user from localStorage
       }
     },
   },

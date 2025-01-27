@@ -3,7 +3,7 @@
   background: -webkit-linear-gradient(rgb(4, 114, 97), rgb(0, 51, 57));
   color: #ecf0f1;
   padding: 40px 0;
-  margin-top: auto; /* Push footer to the bottom if needed */
+  margin-top: auto; 
 }
 
 .footer-section {
